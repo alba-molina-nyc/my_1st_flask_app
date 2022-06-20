@@ -32,9 +32,6 @@ def index():
         tasks = Todo.query.order_by(Todo.date_created).all()
         return render_template('index.html', tasks=tasks)
 
-if __name__ == '__main__':
-    app.run(debug=True)
-
 
 @app.route('/delete/<int:id>')
 def delete(id):
@@ -46,3 +43,6 @@ def delete(id):
         return redirect('/')
     except:
         return 'There was a problem deleting that task'
+
+if __name__ == '__main__':
+    app.run(debug=True)
