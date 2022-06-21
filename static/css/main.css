@@ -1,5 +1,101 @@
 body {
     margin: 0;
     font-family: monospace;
-    background-color: wheat;
+    background-color: azure;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+input{
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+
+input[type=text]:focus{
+    width: 500px;
+    height: 50px;
+    background-color:  #555555;
+    color: white;
+   
+                          
+}
+
+input[type=text]:hover{
+    width: 500px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #555555;
+                          
+}
+
+input[type=submit]:hover{
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;                        
+}
+input[type=submit]:focus{
+    /* changes background color */
+    background-color: #f44336;
+/* changes the font color */
+    color: white;                          
+}
+
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+
+
+tr {
+    background-color: white;
+    margin-top: 20px;
+}
+
+a {
+    margin: 5px;
+    font-size: lighter;
+}
+
+a:hover{
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+
+    
+}
+
+
+
+#header{
+    background-color: #555555;
+    font-style: normal;
+    color: aqua;
+    font-size: x-large;
+}
+
+#items{
+    background-color: aliceblue;
+    font-size: x-large;
+
 }

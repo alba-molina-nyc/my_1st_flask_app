@@ -1,17 +1,15 @@
 {% extends 'base.html' %}
 {% block head %}
-
-
-
+<h1>Taskly</h1>
 <div class="content">
 <table>
-    <tr>
+    <tr id="header">
         <th>Task</th>
         <th>Added</th>
         <th>Actions</th>
     </tr>
     {% for task in tasks %}
-    <tr>
+    <tr id="items">
         <td>{{ task.content }}</td>
         <td>{{ task.date_created.date() }} </td>
         <td>
@@ -21,4 +19,12 @@
     </tr>
     {% endfor%}
 </table>
+
+<div class="form">
+    <form action="/" method="POST">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="Add Task">
+    </form>
+    </div>
+</div>
 {% endblock %}
